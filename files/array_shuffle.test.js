@@ -26,4 +26,10 @@ describe('array_shuffle', () => {
   it('should return a permutation of input Array', () => {
     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
   });
+  
+  it('should not modify input Array', () => {
+    const serializedSampleArray = JSON.stringify(sampleArray);
+    const dummyRun = shuffle(sampleArray);
+    expect(JSON.stringify(sampleArray)).toEqual(serializedSampleArray);
+  });
 });

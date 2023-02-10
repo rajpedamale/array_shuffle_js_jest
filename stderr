@@ -2,10 +2,11 @@ PASS ./array_shuffle.test.js
   array_shuffle
     ✓ should return an array (2 ms)
     ✓ should return array of same size as input Array (1 ms)
-    ✓ should return a permutation of input Array
+    ✓ should return a permutation of input Array (1 ms)
+    ✓ should not modify input Array
 
 Test Suites: 1 passed, 1 total
-Tests:       3 passed, 3 total
+Tests:       4 passed, 4 total
 Snapshots:   0 total
-Time:        1.389 s
+Time:        1.401 s
 Ran all test suites.
