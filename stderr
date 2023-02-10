@@ -1,22 +1,38 @@
+FAIL ./array_shuffle.test.js
+  array_shuffle
+    ✓ should return an array (2 ms)
+    ✓ should return array of same size as input Array
+    ✕ should return a all items of input Array, and only from input Array (1 ms)
+    ✓ should not modify input Array
+
+  ● array_shuffle › should return a all items of input Array, and only from input Array
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      29 |   
+      30 |   it('should return a all items of input Array, and only from input Array', () => {
+    > 31 |     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
+         |                                                                 ^
+      32 |   });
+      33 |   
+      34 |   it('should not modify input Array', () => {
+
+      at Object.<anonymous> (array_shuffle.test.js:31:65)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        1.414 s
+Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
-npm ERR! @ lint: `eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js`
+npm ERR! @ test: `jest --coverage`
 npm ERR! Exit status 1
 npm ERR! 
-npm ERR! Failed at the @ lint script.
+npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_32_44_684Z-debug.log
-PASS ./array_shuffle.test.js
-  array_shuffle
-    ✓ should return an array (1 ms)
-    ✓ should return array of same size as input Array
-    ✓ should return a all items of input Array, and only from input Array (1 ms)
-    ✓ should not modify input Array
-
-Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
-Snapshots:   0 total
-Time:        1.395 s
-Ran all test suites.
+npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_40_41_314Z-debug.log
