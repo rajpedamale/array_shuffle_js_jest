@@ -23,7 +23,7 @@ describe('array_shuffle', () => {
     expect(shuffle(sampleArray).length).toEqual(sampleArray.length);
   });
   
-  it.skip('should return a permutation of input Array', () => {
+  it('should return a permutation of input Array', () => {
     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
   });
 });

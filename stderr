@@ -1,11 +1,37 @@
-PASS ./array_shuffle.test.js
+FAIL ./array_shuffle.test.js
   array_shuffle
     ✓ should return an array (2 ms)
     ✓ should return array of same size as input Array (1 ms)
-    ○ skipped should return a permutation of input Array
+    ✕ should return a permutation of input Array (2 ms)
 
-Test Suites: 1 passed, 1 total
-Tests:       1 skipped, 2 passed, 3 total
+  ● array_shuffle › should return a permutation of input Array
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      25 |   
+      26 |   it('should return a permutation of input Array', () => {
+    > 27 |     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
+         |                                                                 ^
+      28 |   });
+      29 | });
+      30 | 
+
+      at Object.<anonymous> (array_shuffle.test.js:27:65)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
 Snapshots:   0 total
-Time:        1.357 s
+Time:        1.347 s
 Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ test: `jest --coverage`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_19_12_792Z-debug.log
