@@ -1,3 +1,13 @@
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ lint: `eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_08_35_895Z-debug.log
 PASS ./array_shuffle.test.js
   array_shuffle
     ✓ should return an array (2 ms)
@@ -5,5 +15,5 @@ PASS ./array_shuffle.test.js
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        1.494 s
+Time:        1.366 s
 Ran all test suites.

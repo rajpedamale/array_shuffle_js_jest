@@ -1,6 +1,6 @@
 'use strict';
 
-function shuffle() {
+function shuffle(inputArray) {
   return [];
 }
 
