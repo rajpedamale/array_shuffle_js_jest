@@ -27,7 +27,7 @@ describe('array_shuffle', () => {
     expect(shuffle(sampleArray).length).toEqual(sampleArray.length);
   });
   
-  it('should return a permutation of input Array', () => {
+  it('should return a all items of input Array, and only from input Array', () => {
     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
   });
   
