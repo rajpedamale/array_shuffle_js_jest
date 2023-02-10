@@ -6,8 +6,8 @@ const sampleArray = [1, 2, 3, 4, 5, 6];
 
 const checkPermutation = (source, target) => {
   let isPermutation = source.length === target.length;
-  if (isPermuation) {
-    isPermuation = source.reduce((acc, value) => {
+  if (isPermutation) {
+    isPermutation = source.reduce((acc, value) => {
       return acc && target.includes(value);
     }, isPermutation);
   }
