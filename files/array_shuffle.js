@@ -4,7 +4,7 @@ const permutate = (inputArray, outputArray) => {
   inputArray.forEach((item, index) => {
     const shuffleIndex = Math.floor(Math.random() * inputArray.length);
     const shuffleItem = outputArray[shuffleIndex];
-    outputArray[shuffleIndex] = item;
+    outputArray[shuffleIndex] = outputArray[index];
     outputArray[index] = shuffleItem;
   });
   return outputArray;
