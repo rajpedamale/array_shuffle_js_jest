@@ -1,7 +1,7 @@
 'use strict';
 
 function shuffle() {
-  return 6 * 9;
+  return [];
 }
 
 module.exports = shuffle;
