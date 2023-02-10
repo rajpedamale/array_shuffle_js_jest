@@ -1,28 +1,30 @@
 FAIL ./array_shuffle.test.js
   array_shuffle
-    ✓ should return an array (3 ms)
-    ✕ should return a permutation of input Array (2 ms)
+    ✓ should return an array (2 ms)
+    ✕ should return array of same size as input Array (3 ms)
+    ○ skipped should return a permutation of input Array
 
-  ● array_shuffle › should return a permutation of input Array
+  ● array_shuffle › should return array of same size as input Array
 
-    expect(received).toBeTruthy()
+    expect(received).toEqual(expected) // deep equality
 
-    Received: false
+    Expected: 6
+    Received: 3
 
       21 | 
-      22 |   it('should return a permutation of input Array', () => {
-    > 23 |     expect(checkPermutation(sampleArray, shuffle(sampleArray))).toBeTruthy();
-         |                                                                 ^
+      22 |   it('should return array of same size as input Array', () => {
+    > 23 |     expect(shuffle(sampleArray).length).toEqual(sampleArray.length);
+         |                                         ^
       24 |   });
-      25 | });
-      26 | 
+      25 |   
+      26 |   it.skip('should return a permutation of input Array', () => {
 
-      at Object.<anonymous> (array_shuffle.test.js:23:65)
+      at Object.<anonymous> (array_shuffle.test.js:23:41)
 
 Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 passed, 2 total
+Tests:       1 failed, 1 skipped, 1 passed, 3 total
 Snapshots:   0 total
-Time:        1.442 s
+Time:        1.759 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -33,4 +35,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_16_16_979Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2023-02-10T21_18_26_158Z-debug.log

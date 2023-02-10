@@ -91,5 +91,21 @@
       17,
       260358
     ]
+  },
+  {
+    "duration": 4.846433,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 6,
+    "time": [
+      2023,
+      2,
+      10,
+      21,
+      18,
+      26,
+      638528
+    ]
   }
 ]
