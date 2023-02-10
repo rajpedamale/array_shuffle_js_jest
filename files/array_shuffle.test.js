@@ -2,7 +2,7 @@
 
 const shuffle = require('./array_shuffle');
 
-const sampleArray = [1, 2, 3, 4, 5, 6];
+let sampleArray;
 
 const checkPermutation = (source, target) => {
   let isPermutation = source.length === target.length;
@@ -15,6 +15,10 @@ const checkPermutation = (source, target) => {
 };
 
 describe('array_shuffle', () => {
+  beforeEach(() => {
+    sampleArray = [1, 2, 3, 4, 5, 6];
+  });
+  
   it('should return an array', () => {
     expect(Array.isArray(shuffle(sampleArray))).toBeTruthy();
   });
