@@ -1,7 +1,7 @@
 'use strict';
 
 function shuffle(inputArray) {
-  return [1, 2, 3, 1, 2, 3];
+  return inputArray;
 }
 
 module.exports = shuffle;
